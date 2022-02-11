@@ -1,0 +1,705 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+header {
+    color: rgb(216, 210, 210);
+
+}
+.header {
+    padding: 20px;
+}
+
+.header-features {
+    float: right;
+}
+
+.header-features ul li {
+    font-size: 19px;
+    display: inline-block;
+    padding: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.header-features ul li:hover {
+    text-shadow: 0px 0px 5px white;
+}
+
+#logo {
+    transition: 0.5s;
+}
+
+#logo:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 5px red;
+}
+
+#login-btn {
+    border: 2px solid gray !important;
+    padding: 10px;
+    border-radius: 10px;
+    color: white !important;
+    transition: 0.5s;
+}
+
+#login-btn:hover {
+    border: 2px solid rgb(216, 210, 210) !important;
+
+}
+
+.form {
+    opacity: 0;
+    width: 50%;
+    display: flex;
+    position: fixed;
+    margin-top: 30px;
+    transform: translate(80%, 40%);
+    border: 1px solid black;
+    z-index: 3;
+}
+
+.main-title {
+    font-size: 65px;
+    color: rgb(216, 210, 210);
+    text-align: left;
+    padding: 0px 50px;
+}
+
+.role {
+    color: rgb(216, 210, 210);
+    padding: 0px 50px;
+}
+
+.line {
+    width: 20%;
+    border: 3px solid #ff1313f1;
+    margin: 30px 50px;
+}
+
+#play-btn {
+    padding: 15px;
+    font-size: 18px;
+    margin: 0px 50px;
+    border: 2px solid rgb(216, 210, 210);
+    background-color: transparent;
+    color: rgb(216, 210, 210);
+    border-radius: 10px;
+    transition: 0.5s;
+    margin-bottom: 50px;
+}
+
+#play-btn:hover {
+    box-shadow: 0px 0px 10px rgb(216, 210, 210);
+}
+
+.fab {
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+.video-wrapper {
+    background: url("imgs/main-bg.jpg");
+    background-size: cover;
+    padding-bottom: 20px;
+    background-attachment: fixed;
+}
+
+.news {
+    font-size: 20px;
+    color: rgb(216, 210, 210);
+    margin-bottom: 20px;
+    font-family: 'Open Sans';
+}
+
+.news-heading {
+    padding: 0px 10px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    margin-bottom: 30px;
+    width: 380px;
+    height: 260px;
+    background-color: black;
+    position: relative;
+    color: rgb(216, 210, 210);
+    transition: 0.5s;
+    border-bottom: 3px solid gray;
+}
+
+.card:hover {
+    transform: translateY(10px);
+    border-bottom: 3px solid blue;
+    box-shadow: 0px 0px 20px black;
+    cursor: pointer;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(14, 13, 13, 0.5), rgba(63, 60, 60, 0.5));
+    z-index: 2;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.card:hover::before {
+    opacity: 1;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.info {
+    z-index: 3;
+    margin-top: 180px;
+    overflow: hidden;
+    transition: all 0.3s linear;
+}
+
+.card:hover .info {
+    margin-top: 0px;
+}
+
+.news-data {
+    margin: 0;
+    position: relative;
+    z-index: 3;
+    color: rgb(216, 210, 210);
+    opacity: 1;
+    transition: 0.5s;
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: justify;
+
+}
+
+.time {
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+}
+
+.section2 {
+    background-color: rgb(8, 8, 8);
+}
+
+.section3 {
+    padding-top: 300px;
+    background-size: cover;
+    background-image: url("imgs/battle-bg.jpg");
+}
+
+.join-title {
+    text-align: center;
+    align-items: center;
+    padding-bottom: 0px;
+}
+
+.minor {
+    font-size: 70px;
+    color: rgb(216, 210, 210);
+    font-weight: bold;
+}
+
+.major {
+    font-size: 90px;
+    color: rgb(216, 210, 210);
+    padding: 0px 0px;
+    line-height: 1;
+    font-weight: bold;
+}
+
+.join-data {
+    padding: 40px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+.join-datas {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    padding: 0px 30px;
+}
+
+.section4 {
+    background-image: url("imgs/procircuit.jpg");
+    width: 100%;
+    background-size: cover;
+    height: auto;
+    padding-bottom: 100px;
+}
+
+.champion {
+    color: rgb(216, 210, 210);
+    padding-top: 40px;
+}
+
+.champion-title {
+    font-size: 57px;
+    margin-bottom: 30px !important;
+}
+
+.champion-data {
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.video-thumbnail {
+    margin-top: 20px;
+    padding: 30px;
+}
+
+#thumbnail {
+    transition: 0.5s;
+}
+
+#thumbnail:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 10px blue;
+}
+
+.video-part {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 150;
+    transition: visibility 0s, opacity 0.5s;
+}
+
+.bg-active {
+    opacity: 1;
+    visibility: visible;
+}
+
+#battle-video {
+    width: 70%;
+}
+
+#close-btn {
+    position: absolute;
+    top: 0;
+    right: 10%;
+    cursor: pointer;
+    font-size: 50px;
+    color: rgb(216, 210, 210);
+    transition: 0.5s;
+}
+
+#close-btn:hover {
+    text-shadow: 0px 0px 10px white;
+}
+
+
+.modal-content{
+    background-color: black;
+    color:rgb(216, 210, 210);
+    border-radius: 10px;
+    border:1px solid white;
+    box-shadow: 0px 0px 10px blue;
+}
+#exampleModalLabel{
+    padding-left: 20px;
+   font-size: 25px;
+   font-family: 'Open Sans';
+   font-weight: bold;
+
+}
+.modal-body{
+    padding: 40px;
+}
+.close-btn{
+    padding: 10px;
+    font-size: 40px;
+    border: none;
+    background: transparent;
+    color: rgb(216, 210, 210);
+    transition: 0.5s;
+}
+.close-btn:hover{
+    text-shadow: 0px 0px 11px white;
+    transform: rotate(360deg);
+}
+label{
+    font-size: 19px;
+    font-family: 'Open Sans';
+}
+#exampleInputnickName{
+    border: none;
+    background: transparent;
+    margin-top: 10px;
+    color: white;
+    border-radius: 0px;
+    font-family: 'Open Sans';
+    transition: 0.5s;
+    border-bottom: 2px solid rgb(216, 210, 210);
+}
+#exampleInputnickName:focus{
+    border-bottom: 2px solid blue;
+    box-shadow: none;
+}
+small{
+    font-family: 'Open Sans';
+    color: lightgreen !important;
+}
+#exampleInputPassword1{
+    border: none;
+    background: transparent;
+    margin-top: 10px;
+    color: white;
+    border-radius: 0px;
+    font-family: 'Open Sans';
+    transition: 0.5s;
+    border-bottom: 2px solid rgb(216, 210, 210);
+}
+.form-check-label{
+    margin-top:16px ;
+        font-size: 15px;
+}
+#exampleCheck1{
+    margin-top: 20px;
+    border: 1px solid white;
+    border-radius: 0px;
+    background: transparent;
+}
+#exampleInputPassword1:focus{
+    border-bottom: 2px solid blue;
+    box-shadow: none;
+}
+.submit-btn{
+    background: transparent;
+    border: 2px solid rgb(216, 210, 210);
+    margin-top: 20px;
+    padding: 7px;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    color: white;   
+    transition: 0.5s;
+    float: right;
+}
+.submit-btn:hover{
+    border: 2px solid blue;
+    color: blue;
+    box-shadow: 0px 0px 5px blue;
+}
+.footer-section{
+    background-color: black;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-img img{
+    display: block;
+    margin: 0 auto;
+    width: 15%;
+    margin-bottom: 10px;
+
+}
+.footer-info p{
+    font-size: 15px;
+    padding: 0px 150px;
+    text-align: center;
+
+    font-family: 'Open Sans' !important;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    margin-top: 20px;
+    z-index: 2;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.brand-slider{
+    background-color: black;
+    height: 150px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+}
+@keyframes scroll{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px * 4));
+    }
+    
+}
+.brand-slider .slide-track{
+    display: flex;
+    animation: scroll 20s linear infinite;
+}
+.brand-slider .slide{
+    height: 150px;
+    width:250px ;
+}
+@media all and (max-width:425px) {
+    #logo{
+      width: 20%;
+    }
+    .header{
+        padding: 0;
+    }
+    .header-features ul{
+       padding:0;
+    
+    }
+    .header-features ul li{
+       font-size: 10px;
+       padding:0;
+       padding-right: 10px;
+    }
+    #login-btn{
+        font-size: 10px;
+        padding: 4px;
+        border-radius: 0px;
+    }
+    .main-role{
+        font-size: 10px;
+       text-align: center;
+    }
+    .main-title{
+        font-size: 25px;
+        padding: 0;
+        text-align: center;
+    }
+    .video-wrapper{
+        background-position: center;
+        padding-bottom:0px ;
+    }
+    .line{
+        margin: 10px 100px;
+        border: 3px solid blue;
+    }
+    
+    #play-btn{
+        font-size: 8px;
+        padding: 5px;
+        margin: 20px 90px;
+        border-radius: 0px;
+    }
+    .fab{
+        font-size: 8px;
+    }
+    .section3{
+        padding-top: 100px;
+        width: 100%;
+        background-position: center;
+    }
+    .minor{
+        font-size: 20px;
+       
+    }
+   .major{
+
+       font-size: 30px;
+   }
+   .join-data{
+       padding: 30px;
+   }
+   .join-datas{
+       font-size: 8px;
+       padding: 0;
+   }
+   .section4{
+       padding-bottom: 50px;
+       width: 100%;
+       background-position: center;
+   }
+   .champion{
+       padding: 0;
+   }
+   .champion-title{
+       font-size: 25px;
+   }
+   .champion-data{
+       font-size: 10px;
+   }
+   .video-thumbnail{
+       align-items: center;
+       padding: 0;
+       margin:0;
+   }
+   #thumbnail{
+       width: 90%;
+   }
+   #close-btn{
+       font-size: 20px;
+   }
+   #battle-video{
+       width:90%;
+   }
+   .modal-content{
+       padding:0px;
+   }
+   .modal-header{
+       padding:0px;
+   }
+   #exampleModalLabel{
+    font-size: 18px;
+   }
+   .close-btn{
+       padding:0px 20px;
+       
+   }
+   #login-close{
+       font-size: 20px;
+   }
+   .modal-body{
+       padding: 20px;
+   }
+   label{
+       font-size: 15px;
+   }
+   .form-check-label{
+       font-size: 13px;
+   }
+   .submit-btn{
+       margin: 0;
+       font-size: 13px;
+   }
+   .footer-section{
+   padding: 10px;
+}
+.footer-info p{
+    font-size: 6px;
+    padding: 0;
+}
+
+}
+@media all and (max-width:1024px) {
+    #logo{
+      width: 20%;
+    }
+    .header{
+        padding: 0;
+    }
+    .header-features ul{
+       padding:0;
+    
+    }
+    .header-features ul li{
+       font-size: 10px;
+       padding:0;
+       padding-right: 10px;
+    }
+    #login-btn{
+        font-size: 10px;
+        padding: 4px;
+        border-radius: 0px;
+    }
+    .main-role{
+        font-size: 10px;
+       text-align: center;
+    }
+    .main-title{
+        font-size: 25px;
+        padding: 0;
+        text-align: center;
+    }
+    .video-wrapper{
+        background-position: center;
+        padding-bottom:0px ;
+    }
+    .line{
+        margin: 10px 100px;
+        border: 3px solid blue;
+    }
+    
+    #play-btn{
+        font-size: 8px;
+        padding: 5px;
+        margin: 20px 90px;
+        border-radius: 0px;
+    }
+    .fab{
+        font-size: 8px;
+    }
+    .section3{
+        padding-top: 100px;
+        width: 100%;
+        background-position: center;
+    }
+    .minor{
+        font-size: 20px;
+       
+    }
+   .major{
+
+       font-size: 30px;
+   }
+   .join-data{
+       padding: 30px;
+   }
+   .join-datas{
+       font-size: 8px;
+       padding: 0;
+   }
+   .section4{
+       padding-bottom: 50px;
+       width: 100%;
+       background-position: center;
+   }
+   .champion{
+       padding: 0;
+   }
+   .champion-title{
+       font-size: 25px;
+   }
+   .champion-data{
+       font-size: 10px;
+   }
+   .video-thumbnail{
+       align-items: center;
+       padding: 0;
+       margin:0;
+   }
+   #thumbnail{
+       width: 90%;
+   }
+   #close-btn{
+       font-size: 20px;
+   }
+   #battle-video{
+       width:90%;
+   }
+}

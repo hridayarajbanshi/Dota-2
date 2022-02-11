@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dota2</title>
+    <link rel="icon" href="./imgs/dota-2-icon.png">
+    <meta content="author" description="Hridaya Rajbanshi">
+    <meta content="" description="">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+        integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="./dota2.css">
+</head>
+<!-- main-heading  -->
+
+<body>
+    <div class="video-wrapper">
+        <header>
+            <div class="header container">
+                <img src="./imgs/dota-2-icon.png" alt="" width="100px" id="logo">
+
+                <div class="header-features">
+                    <ul>
+                        <li>Game</li>
+                        <div class="dropdown">
+                        <li>Heroes</li>
+                        <div class="dropdown-content">
+                        hello
+                        </div>
+                    </div>
+                        <li>News</li>
+                        <li>Esports</li>
+                        <button type="button" class="btn" id="login-btn" data-toggle="modal"
+                            data-target="#exampleModal">
+                            Login
+                        </button>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- login-form -->
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                        <button type="button" class="close-btn" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" id="login-close">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form name="login-form">
+                            <div class="form-group">
+                              <label for="exampleInputName1">Nickname </label>
+                              <input type="text" class="form-control" name="nickN" id="exampleInputnickName" aria-describedby="emailHelp" placeholder="Enter your nickname" required>
+                            </div>
+                            <div class="form-group">
+                              <label for="exampleInputPassword1">Password</label>
+                              <input type="password" class="form-control" name="pwd" id="exampleInputPassword1" placeholder="Enter your password" required>
+                              <small id="emailHelp" class="form-text text-muted">Don't share your password with anyone.</small>
+                            </div>
+                            <div class="form-check">
+                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                              <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                            </div>
+                            <button type="submit" class="submit-btn">Submit</button>
+                          </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- main-content -->
+
+        <div class="row container mt-5">
+            <div class="col-md-6">
+                <h2 class="main-title">“A MODERN MULTIPLAYER MASTERPIECE.”</h2>
+                <span class="role main-role">-DESTRUCTOID</span>
+                <hr class="line">
+                <!-- play button -->
+                <button id="play-btn" onclick="play()">Play Now <i class="fab fa-steam"></i></button>
+            </div>
+            <div class="col-md-6">
+
+            </div>
+        </div>
+    </div>
+    <!-- cards section -->
+    <div class="section2">
+        <div class="cards-section container ">
+            <div class="row ">
+                <span class="news">Latest News</span>
+                <div class="col-sm-4">
+                    <div class="wrapper">
+                        <div class="card">
+                            <img src="./imgs/news2.png" alt="">
+                            <div class="info">
+                                <span class="time">Time</span>
+                                <h2 class="news-heading">NAVI wins the game </h2>
+                                <p class="news-data">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas,
+                                    vitae. Et, ut. Enim dicta distinctio nostrum, exercitationem similique delectus,
+                                    provident aperiam officia iusto, iste harum repellat modi odio sequi maiores.</p>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-sm-4">
+                    <div class="wrapper">
+                        <div class="card">
+                            <img src="./imgs/news1.png" alt="">
+                            <div class="info">
+                                <span class="time">Time</span>
+                                <h2 class="news-heading">NAVI wins the game </h2>
+                                <p class="news-data">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas,
+                                    vitae. Et, ut. Enim dicta distinctio nostrum, exercitationem similique delectus,
+                                    provident aperiam officia iusto, iste harum repellat modi odio sequi maiores.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="wrapper">
+                        <div class="card">
+                            <img src="./imgs/news3.jpg" alt="">
+                            <div class="info">
+                                <span class="time">Time</span>
+                                <h2 class="news-heading">NAVI wins the game </h2>
+                                <p class="news-data">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas,
+                                    vitae. Et, ut. Enim dicta distinctio nostrum, exercitationem similique delectus,
+                                    provident aperiam officia iusto, iste harum repellat modi odio sequi maiores.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section3">
+        <div class="container">
+            <div class="join-title">
+                <span class="minor">JOIN THE</span><br>
+                <span class="major">BATTLE OF THE ANCIENTS</span>
+            </div>
+            <div class="join-data">
+                <p class="join-datas">Every day, millions of players worldwide enter the battle as one of over a hundred
+                    Dota Heroes in a 5v5 team clash. Dota is the deepest multi-player action RTS game ever made and
+                    there's always a new strategy or tactic to discover. It's completely free to play and always will be
+                    – start defending your ancient now.</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="section4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mt-5">
+                    <div class="champion">
+                        <span class="champion-title">DOTA PRO CIRCUIT</span>
+                        <p class="champion-data">When not climbing the ranks, you'll be able to learn from the best. The
+                            Dota Pro Circuit features ultra-high-level Dota 2 competition streaming regularly in the
+                            game client, on Twitch and Steam.TV. Culminating in the largest e-sports championship in the
+                            world, The International, professional Dota 2 is an event not to be missed.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-5">
+                    <div class="video-thumbnail">
+                        <img src="./imgs/dota2 championship.jpg" alt="" width="100%" height="auto" id="thumbnail">
+                    </div>
+                    <div class="video-part">
+                        <span id="close-btn">&times;</span>
+                        <video src="./dota-2-join-the-battle-save-from.net.mp4" autoplay controls width="170%"
+                            height="auto" id="battle-video"></video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- brand logo slider -->
+    <div class="brand-slider">
+        <div class="slide-track">
+            <div class="slide">
+                <img src="./imgs/news2.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="./imgs/news2.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="./imgs/footer_logo.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="./imgs/news2.png" alt="" >
+            </div>
+            <div class="slide">
+                <img src="./imgs/news2.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="./imgs/news2.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="./imgs/news2.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="./imgs/news2.png" alt="">
+            </div> 
+            <div class="slide">
+                <img src="./imgs/news2.png" alt="">
+            </div> 
+            <div class="slide">
+                <img src="./imgs/news2.png" alt="">
+            </div>
+        </div>
+    </div>
+ <!-- footer -->
+ <div class="footer-section">
+     <footer class="container">
+         <div class="footer-img">
+             <img src="./imgs/footer_logo.png" alt="" width="20%">
+         </div>
+         <div class="footer-info text-center">
+             <p class="text-muted">Dota and the Dota logo are trademarks and/or registered trademarks of Valve Corporation. 2021 Valve Corporation, all rights reserved.</p>
+         </div>
+     </footer>
+ </div>
+
+
+    <script>
+
+        gsap.fromTo(".main-title", { x: -200, opacity: 0.1 }, {
+            x: 0, opacity: 1, duration: 2
+        });
+        gsap.fromTo(".join-title", {
+            y: 100, opacity: 0.1
+        }, {
+            y: 0, opacity: 1, duration: 2
+        }
+        );
+        gsap.fromTo(".champion", { x: -200, opacity: 0.1 }, {
+            x: 0, opacity: 1, duration: 2
+        });
+        let thubnail = document.getElementById("thumbnail");
+        let videoPart = document.querySelector(".video-part");
+        let closeBtn = document.getElementById("close-btn");
+
+        thubnail.addEventListener("click", () => {
+            videoPart.classList.add("bg-active");
+        });
+        closeBtn.addEventListener("click", () => {
+            videoPart.classList.remove("bg-active");
+        })
+        let sub = document.querySelector(".submit-btn");
+        sub.addEventListener("click", ()=>{
+           
+        })
+       
+
+        // document.getElementByClassName("time").inner = date;
+
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
